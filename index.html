@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <title>GitHub Fundamentals</title>
+    <style>
+      body {
+        background-color: #21252a;
+        color: azure;
+      }
+
+      .accordion {
+        --bs-accordion-active-bg: #365198;
+        --bs-accordion-active-color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!----Dark Offscreen Navbar---->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">GitHub Fundamentals</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              GitHub Fundamentals
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/dbagwel6"
+                  >Visit my GitHub here</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Sections & Steps
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li>
+                    <a class="dropdown-item" href="#setting-up-the-environment"
+                      >Setting Up the Environment</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#creating-and-cloning-a-github-repository"
+                      >Creating and Cloning a GitHub Repository</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#Basic-Git-Operations-in-VS-Code"
+                      >Basic Git Operations in VS Code</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#Branching-with-VS-Code">Branching with VS Code</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#Working-with-Remote-Repositories"
+                      >Working with Remote Repositories</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#Pull-Requests-and-Code-Reviews"
+                      >Pull Requests and Code Reviews</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <br /><br /><br /><br />
+
+    <!----Landing Section---->
+    <section>
+      <img
+        src="/img/github-logo-4.png"
+        alt="Git Guy"
+        style="display: block; margin-left: auto; margin-right: auto"
+      />
+      <h1 style="text-align: center">Have a look around!</h1>
+      <h3 style="text-align: center">
+        And you will find everything you need to know about GitHub
+      </h3>
+    </section>
+    <br />
+
+    <!----Tab 1 Setting Up the Environment---->
+    <div class="container">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              <a id="setting-up-the-environment">Setting Up the Environment</a>
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong
+                >To set up a healthy Git and Visual Studio Code (VS Code)
+                environment in your system, you'll need to follow these
+                steps:</strong
+              >
+              <ul>
+                <li>Install Git and VS Code</li>
+                <li>Configure Git within VS Code (user name, email)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Install Git and VS Code
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>Install Git:</strong>
+              <ul>
+                <li>Go to the official Git website: https://git-scm.com/</li>
+                <li>
+                  Download the installer for your operating system (Windows,
+                  macOS, Linux).
+                </li>
+                <li>
+                  Run the installer and follow the installation instructions
+                  provided.
+                </li>
+                <li>
+                  During the installation process, you can choose the components
+                  you want to install and the default settings. For most users,
+                  the default options are fine.
+                </li>
+              </ul>
+              <br />
+              <strong>Install Visual Studio Code (VS Code):</strong>
+              <ul>
+                <li>
+                  Go to the official VS Code website:
+                  https://code.visualstudio.com/
+                </li>
+                <li>
+                  Download the installer for your operating system (Windows,
+                  macOS, Linux).
+                </li>
+                <li>
+                  Run the installer and follow the installation instructions
+                  provided.
+                </li>
+                <li>
+                  During the installation process, you can choose the components
+                  you want to install and the default settings. Again, for most
+                  users, the default options are fine.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Configure Git within VS Code (user name, email).
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>Verify the installations:</strong>
+              <p>
+                Once both Git and VS Code are installed, you can verify their
+                installations by opening a terminal/command prompt and typing
+                the following commands:
+              </p>
+              <ul>
+                <li>
+                  For Git, type git --version. This should display the installed
+                  Git version.
+                </li>
+                <li>
+                  For VS Code, type code --version. This should display the
+                  installed VS Code version.
+                </li>
+              </ul>
+              <br />
+              <strong>Set up Git if needed:</strong>
+              <ul>
+                <li>
+                  If this is your first time using Git, you may need to
+                  configure it with your name and email address. You can do this
+                  by typing the following commands in the terminal/command
+                  prompt:
+                </li>
+                <img
+                  src="/img/install-code-1.png"
+                  alt="install code"
+                  style="width: 60%"
+                />
+                <li>
+                  Replace "Your Name" and "your.email@example.com" with your
+                  actual name and email address.
+                </li>
+              </ul>
+              <br />
+              <strong>Start using Git and VS Code:</strong>
+              <ul>
+                <li>
+                  Now that both Git and VS Code are installed, you can start
+                  using them together. Open VS Code, and you can use the
+                  integrated terminal within VS Code to execute Git commands.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br />
+
+    <!----Tab 2 Creating and Cloning a GitHub Repository---->
+    <div class="container">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              <a id="creating-and-cloning-a-github-repository">Creating and Cloning a GitHub Repository</a>
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong
+                >To create and clone a GitHub repository, you'll first need a
+                GitHub account. Once you're logged in, follow these
+                steps:</strong
+              >
+              <ul>
+                <li>Create a new repository on GitHub</li>
+                <li>
+                  Clone the repository using VS Code's integrated Git support
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Create a new repository on GitHub
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>Creating a GitHub Repository:</strong>
+              <ul>
+                <li>Go to GitHub: Visit GitHub and log in to your account.</li>
+                <br />
+                <li>Create a New Repository:</li>
+                <ul>
+                  <li>
+                    Click on the "+" icon in the top-right corner of the page.
+                  </li>
+                  <li>Select "New repository" from the dropdown menu.</li>
+                </ul>
+                <br />
+                <li>Fill in Repository Details:</li>
+                <ul>
+                  <li>Choose a repository name.</li>
+                  <li>Optionally, add a description.</li>
+                  <li>
+                    Choose whether the repository will be public or private.
+                  </li>
+                  <li>
+                    You can also initialize the repository with a README, which
+                    is useful for initializing your repository with some initial
+                    content.
+                  </li>
+                  <li>Click on "Create repository".</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Clone the repository using VS Code's integrated Git support
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>Cloning a GitHub Repository:</strong>
+              <p>
+                Once you've created your repository, you can clone it to your
+                local machine.
+              </p>
+              <ul>
+                <li>Get the Repository URL:</li>
+                <ul>
+                  <li>
+                    On the repository page, click on the green "Code" button.
+                  </li>
+                  <li>
+                    Copy the URL provided (you can use HTTPS or SSH, depending
+                    on your preference).
+                  </li>
+                </ul>
+              </ul>
+              <ul>
+                <li>Open Terminal (or Command Prompt on Windows):</li>
+                <ul>
+                  <li>
+                    Navigate to the directory where you want to clone the
+                    repository.
+                  </li>
+                </ul>
+              </ul>
+              <ul>
+                <li>Clone the Repository:</li>
+                <ul>
+                  <li>
+                    Use the git clone command followed by the URL you copied
+                    earlier.
+                  </li>
+                  <li>For example:</li>
+                  <img src="/img/git-clone.png" alt="Git Clone" style="width: 60%;" />
+                  <li>If you're using SSH:</li>
+                  <img src="/img/git-clone-ssh.png" alt="Git Clone using SSH" style="width: 60%;" />
+                </ul>
+              </ul>
+              <ul>
+                <li>Navigate into the Cloned Repository:</li>
+                <ul>
+                  <li>
+                    Use <strong>'cd'</strong> command to enter the cloned
+                    repository directory.
+                  </li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br />
+
+    <!----Tab 3 Basic Git Operations in VS Code---->
+    <div class="container">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+            <a id="Basic-Git-Operations-in-VS-Code">Basic Git Operations in VS Code</a>
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>How to perform these basic Git operations:</strong>
+              <ul>
+                <li>Status, Add, Commit, push, and Pull</li>
+              </ul>
+              <p>
+                These are the basic Git operations you can perform through the
+                VS Code GUI. It's a user-friendly interface that makes version
+                control tasks more accessible, especially for those who are not
+                as familiar with using the command line.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              How to perform basic Git operations
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong
+                >Performing basic Git operations like status, add, commit, push,
+                and pull through the Visual Studio Code (VS Code) GUI is quite
+                straightforward. Here's how you can do it:</strong
+              ><br /><br />
+              <ol type="1">
+                <li>
+                  <strong>Status:</strong> To check the status of your
+                  repository (to see which files have been modified), you can
+                  open the Source Control view in VS Code. You can do this by
+                  clicking on the third icon in the activity bar on the side,
+                  which looks like a square with a branch symbol (alternatively,
+                  you can press Ctrl+Shift+G).
+                </li>
+                <br />
+                <li>
+                  <strong>Add:</strong> To stage changes for commit, you can
+                  either click on the '+' icon next to the file name in the
+                  Source Control view, or you can stage all changes by clicking
+                  on the '+' icon at the top of the Source Control view. This
+                  will stage all modified files for commit.
+                </li>
+                <br />
+                <li>
+                  <strong>Commit:</strong>After staging your changes, you can
+                  enter a commit message by clicking on the checkmark icon in
+                  the Source Control view. Alternatively, you can press
+                  'Ctrl+Enter'. A text box will appear where you can enter your
+                  commit message. Type your message, then press 'Ctrl+Enter'
+                  again to commit the changes.
+                </li>
+                <br />
+                <li>
+                  <strong>Push:</strong>If you want to push your commits to a
+                  remote repository (like GitHub, GitLab, or Bitbucket), you can
+                  do so by clicking on the ellipsis ('...') next to the branch
+                  name in the bottom-left corner of the VS Code window. Then,
+                  select "Push" from the dropdown menu. If you haven't set up a
+                  remote repository yet, you'll need to do that first.
+                </li>
+                <br />
+                <li>
+                  <strong>Pull:</strong>To pull changes from a remote
+                  repository, you can click on the ellipsis (...) next to the
+                  branch name in the bottom-left corner of the VS Code window.
+                  Then, select "Pull" from the dropdown menu. This will fetch
+                  any changes from the remote repository and merge them into
+                  your local branch.
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br />
+
+    <!----Tab 4 Branching with VS Code---->
+    <div class="container">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              <a id="Branching-with-VS-Code">Branching with VS Code</a>
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong
+                >What is branching?</strong
+              >
+              <ul>
+                <li>Branching is a fundamental concept in version control systems
+                  like Git, allowing multiple developers to work on different
+                  features or fixes simultaneously without interfering with each
+                  other's work.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Use VS Code to create and switch between branches
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>Here's how you can do it:</strong>
+              <br><br>
+              <ol type="1">
+                <li><strong>Create a new branch:</strong> To create a new branch, you can use the following command in the integrated terminal:</li>
+                <img src="/img/git-checkout-b.png" alt="Creating a branch" style="width: 60%;">
+                <p>Replace <branch-name> with the name you want to give to your new branch. This command creates a new branch and switches to it.</p>
+                  <br>
+                <li><strong>Make changes:</strong> Make the necessary changes to your code for the new feature or bug fix.</li>
+                <br>
+                <li><strong>Stage and commit your changes:</strong> Once you've made your changes, stage them using the following command:</li>
+                <img src="/img/git-add.png" alt="git add" style="width: 60%;">
+                <p>Then commit the changes with a descriptive message:</p>
+                <img src="/img/git-commit.png" alt="git commit" style="width: 60%;">
+                <br><br>
+                <li><strong>Switch between branches:</strong>If you want to switch between branches, you can use the following command:</li>
+                <img src="/img/git-checkout.png" alt="git checkout" style="width: 60%;">
+                <p>Replace <branch-name> with the name of the branch you want to switch to.</p>
+                  <br>
+                <li><strong>Push your changes (if working with a remote repository):</strong>If you're working with a remote repository (e.g., on GitHub), you'll need to push your changes to the remote repository. Use the following command:</li>
+                <img src="/img/git-push.png" alt="git push" style="width: 60%;">
+                <p>Replace <branch-name> with the name of your branch.</p>
+              </ol>  
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Understand the concept of branching for feature development or bug
+              fixes
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>Remember to commit your changes frequently and to pull changes from the remote repository before pushing to avoid conflicts. Branching allows for organized and collaborative development, making it easier to manage different features and fixes within your project.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br />
+
+    <!----Tab 5 Working with Remote Repositories---->
+    <div class="container">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              <a id="Working-with-Remote-Repositories">Working with Remote Repositories</a>
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                <strong>In Visual Studio Code (VS Code), you can indeed add and manage remote repositories directly within the editor.</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Add and manage remote repositories directly from VS Code
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>Here's how you can do it:</p>
+              <ol type="1">
+                <li><strong>Open VS Code:</strong> Launch Visual Studio Code on your computer.</li><br>
+                <li><strong>Open the Command Palette:</strong> You can do this by pressing Ctrl+Shift+P (Windows/Linux) or Cmd+Shift+P (macOS). This will open the Command Palette at the top of the editor.</li><br>
+                <li><strong>Search for Git Commands:</strong> Type "Git: Clone" and select it from the dropdown list. This command allows you to clone a repository from a remote source.</li><br>
+                <li><strong>Enter Repository URL:</strong> Provide the URL of the remote repository you want to add. This could be a GitHub repository URL, GitLab, Bitbucket, or any other Git repository URL.</li><br>
+                <li><strong>Choose Local Directory:</strong> Select the directory on your local machine where you want to clone the repository. VS Code will create a folder with the repository name inside this directory and clone the repository into it.</li><br>
+                <li><strong>Open Cloned Repository:</strong> Once the cloning process is complete, you'll be prompted to open the cloned repository. Click "Open" to open it in a new window or "Open in Current Window" to open it in the current VS Code window.</li><br>
+                <li><strong>Manage Repositories:</strong> Once the repository is open, you can manage it directly within VS Code. You can view changes, stage them for commit, commit changes, create branches, merge branches, push changes to the remote repository, pull changes from the remote repository, and perform various other Git operations using the built-in Git integration in VS Code.</li>
+              </ol>
+              <p>Additionally, if you already have a local repository and want to connect it to a remote repository, you can do so using Git commands directly in the integrated terminal of VS Code or by configuring the remote repository through the Git settings.</p>
+              <p>By following these steps, you can easily add and manage remote repositories directly from within Visual Studio Code, streamlining your development workflow.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Push to and pull from these remotes using the VS Code interface
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>In Visual Studio Code (VS Code), you can push to and pull from remote repositories using the integrated source control features. Here's a step-by-step guide:</p>
+              <h4>Pushing to a Remote Repository:</h4>
+              <ol type="1">
+                <li><strong>Open VS Code:</strong> Launch Visual Studio Code.</li>
+                <li><strong>Open Your Project:</strong> Open the project folder in which your Git repository is initialized.</li>
+                <li><strong>Source Control Tab:</strong> Click on the Source Control icon in the Activity Bar on the side (usually on the left side), or press Ctrl+Shift+G to open the Source Control view.</li>
+                <li><strong>Stage Changes:</strong> Stage the changes you want to push by clicking the "+" icon next to each changed file. Alternatively, you can stage all changes by clicking the "+" icon at the top.</li>
+                <li><strong>Commit Changes:</strong> Enter a commit message in the text box provided and press Ctrl+Enter or click the checkmark icon to commit your changes.</li>
+                <li><strong>Push Changes:</strong> After committing, click on the ellipsis (...) next to the commit message and select "Push" from the dropdown menu. Or, you can directly click the push icon (upward arrow) in the top-right corner of the Source Control view.</li>
+                <li><strong>Authenticate (if necessary):</strong> If you haven't already authenticated with your remote repository, you might need to enter your credentials.</li>
+                <li><strong>Monitor Progress:</strong> VS Code will show the progress of the push operation in the bottom-left corner. Once completed, you'll see a success message.</li>
+              </ol> 
+              <br>
+              <h4>Pulling from a Remote Repository:</h4>
+              <ol type="1">
+                <li><strong>Ensure You're Up to Date:</strong> Before pulling changes, make sure your local repository is up to date. You can do this by clicking the ellipsis (...) next to the branch name in the Source Control view and selecting "Pull from..." to choose the branch to pull from. Or, you can directly click the sync icon (circular arrow) in the top-right corner of the Source Control view.</li>
+                <li><strong>Choose Pull Strategy:</strong> VS Code will prompt you to choose a strategy for pulling changes. You can select "Merge" or "Rebase" based on your preference.</li>
+                <li><strong>Resolve Conflicts (if any):</strong> If there are any conflicts between your local changes and the changes being pulled, VS Code will notify you. You'll need to resolve these conflicts manually.</li>
+                <li><strong>Commit Merged Changes (if necessary):</strong> After resolving conflicts, commit the merged changes using the same process as described in the "Pushing to a Remote Repository" section.</li>
+                <li><strong>Push Merged Changes (if necessary):</strong> If you had to commit merged changes, you might need to push them to the remote repository using the steps outlined in the "Pushing to a Remote Repository" section.</li>
+                
+              </ol> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br />
+
+    <!----Tab 6 Pull Requests and Code Reviews within VS Code---->
+    <div class="container">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              <a id="Pull-Requests-and-Code-Reviews">Pull Requests and Code Reviews within VS Code</a>
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>Here's a step-by-step guide on how to:</strong>
+              <ul>
+                <li>Create pull requests using GitHub and VS Code</li>
+                <li>Review and discuss pull requests</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Create pull requests using GitHub and VS Code
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>
+                Creating pull requests using GitHub and VS Code is a common workflow for many developers. Here's a step-by-step guide on how to do it:</strong>
+                <ol type="1">
+                  <li><strong>Clone the Repository:</strong> First, you need to clone the repository you want to work on to your local machine. You can do this by opening VS Code, pressing Ctrl+Shift+P (or Cmd+Shift+P on macOS) to open the command palette, and then selecting "Git: Clone" and entering the URL of the repository.</li>
+                  <li><strong>Create a New Branch:</strong> Once the repository is cloned, create a new branch for your changes. You can do this by clicking on the branch name in the bottom-left corner of VS Code and selecting "Create new branch." Give your branch a descriptive name related to the changes you're going to make.</li>
+                  <li><strong>Make Changes:</strong> Now, make the necessary changes to the code in VS Code. You can create new files, edit existing ones, or delete files as needed.</li>
+                  <li><strong>Stage and Commit Changes:</strong> After making your changes, stage them by clicking the + button next to each file in the Source Control view in VS Code. Once your changes are staged, enter a commit message describing the changes and click the checkmark icon to commit them.</li>
+                  <li><strong>Push Changes to GitHub:</strong> Once your changes are committed, push them to GitHub by clicking the sync icon in the bottom-left corner of VS Code's status bar. This will push your changes to the branch you created earlier on GitHub.</li>
+                  <li><strong>Create a Pull Request:</strong> After pushing your changes to GitHub, navigate to the repository on the GitHub website. You should see a banner indicating that you recently pushed a branch. Click the "Compare & pull request" button to create a new pull request.</li>
+                  <li><strong>Review Changes:</strong> In the pull request view, review the changes you've made. You can add a title and description to provide more context about your changes.</li>
+                  <li><strong>Submit Pull Request:</strong> Once you're satisfied with the changes, click the "Create pull request" button to submit the pull request. This will notify the repository's maintainers that you've made changes and want them to be reviewed and merged into the main branch.</li>
+                </ol>  
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Review and discuss pull requests
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>Reviewing and discussing pull requests in GitHub is a crucial aspect of collaborative software development. Here's a general process you can follow:</strong>
+              <ol type="1">
+                <li><strong>Understand the Changes:</strong> Begin by thoroughly reading through the changes proposed in the pull request. Understand what problem the changes are solving or what new features they're adding.</li>
+                <li><strong>Check Code Quality:</strong> Look for any potential issues with code quality, such as adherence to coding standards, readability, efficiency, and maintainability. You can use linters, static code analyzers, and code review tools to help with this.</li>
+                <li><strong>Test the Changes:</strong> If possible, test the changes locally to ensure they work as intended. This can involve running the code, executing unit tests, or even performing manual testing if needed.</li>
+                <li><strong>Consider Edge Cases:</strong> Think about potential edge cases or scenarios that the changes might not cover. Offer suggestions or ask questions about how these cases are handled.</li>
+                <li><strong>Provide Constructive Feedback:</strong> When providing feedback, be respectful and constructive. Point out specific areas for improvement and suggest alternatives if necessary. Focus on the code and the problem it's trying to solve rather than criticizing the author.</li>
+                <li><strong>Discuss Design Decisions:</strong> If you have concerns or questions about the design decisions made in the code, raise them for discussion. Sometimes, there might be valid reasons for certain choices that aren't immediately apparent.</li>
+                <li><strong>Address Security Concerns:</strong> Pay special attention to any security implications introduced by the changes. Make sure that sensitive data is handled securely and that there are no vulnerabilities introduced.</li>
+                <li><strong>Review Documentation:</strong> Check whether the pull request includes any necessary updates to documentation, such as code comments, README files, or user guides.</li>
+                <li><strong>Collaborate:</strong> Engage in discussions with the author and other reviewers to resolve any issues or questions that arise. Collaboration is key to reaching the best possible outcome.</li>
+                <li><strong>Approve or Request Changes:</strong> Once you're satisfied with the changes, you can approve the pull request. If there are still issues that need to be addressed, request changes and provide feedback on what needs to be done before the changes can be merged.</li>
+              </ol>
+              <p>Remember that the goal of code review is not only to catch bugs but also to improve the overall quality of the codebase and foster learning and collaboration among team members.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+
+    <!----Footer---->
+    <footer>
+      <p style="text-align: center;">Author: Dylan Bagwell<br>
+      <a href="mailto:dbagwel6@students.kennesaw.edu" id="contact" style="text-align: center;">dbagwel6@students.kennesaw.edu</a></p>
+      <br><br>
+    </footer>
+
+    <!-- JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
